@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;   
+}
+
+/*  Barra de navegacion */
+nav  img{
+    position:absolute;
+    margin-left: 5px;
+    width: 90px;
+    margin-top: 10px;
+    padding: 0;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end ;
+    list-style: none;  
+    background: #252525;
+}
+
+nav li .separador{
+    display: flex;
+    width: 80%;
+}
+
+nav li a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    padding: 20px ;
+    padding-right: 20px;
+}
+  nav li :hover {
+    background: #FF6347;
+    color: white;
+}
+
+/* Inicio  */
+
+main .principal{
+    background-image: url(/img/destacada.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+main .principal h1{
+    position:absolute;
+    margin-top: 520px;
+    padding-left: 50px;
+    width: 55%;
+    color: #ffffff;
+    font-size: 90px;
+    opacity: 0.8;
+}
+
+/*Anuncios*/
+.casas h1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.casas .grid-casa{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 500px;
+    row-gap: 50px;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.casas .grid-casa .grid-contenedor{
+    display: inline-grid;
+    background-color:#FFFBF4;
+    border: 1px solid #505050;
+    
+}
+
+.casas .grid-casa .grid-contenedor img{
+    width: 400px;
+    height: 200px;
+}
+
+.casas .grid-casa .grid-contenedor .opciones{
+    width: 40px;
+    height: 40px;
+
+}
+
+.casas .grid-casa .grid-contenedor h3{
+    text-align: center;
+}
+.casas .grid-casa .grid-contenedor p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.casas .grid-casa .grid-contenedor .boton{
+    width: 100%;
+    height: 50px;
+    background-color:#F5BF2E;
+    padding-top: 10px;
+}
+
+.casas .grid-casa .grid-contenedor .boton a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.casas .grid-casa .grid-contenedor .boton:hover{
+   background-color:#FF6347
+}
+
+/* Nosotros */
+.nosotros .caja{
+    display: grid;
+    grid-template-columns: 800px ;
+    grid-template-rows: 100px;
+    align-items: center;
+    justify-content: center;
+}
